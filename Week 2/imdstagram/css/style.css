@@ -27,3 +27,20 @@ nav ul li a:hover{
     width: 100%;
     text-align: center;
 }
+
+/*PHOTOS*/
+
+section{
+    display: flex;	
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section div{
+    justify-content: center;
+    margin: 1em;
+	flex-grow: 1;
+	background-size: cover;
+}
+
+
