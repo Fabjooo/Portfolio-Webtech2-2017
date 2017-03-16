@@ -67,7 +67,21 @@ section li{
     color: white;
     text-align: center;
     list-style: none;
+    flex-grow: 1; /*belangrijk bij nieuwe schermbreedte! */
 }
 
-
+@media screen and (min-width: 640px){
+    
+    
+    section ul{
+        flex-direction: row;
+        align-items: center;
+        align-content: space-between;
+    }
+    
+    section li h2{
+        text-transform: uppercase;
+        font-style: italic;
+    }
+}
 
