@@ -43,4 +43,26 @@ section div{
 	background-size: cover;
 }
 
-
+@media(min-width: 860px ) {
+ 	nav ul{
+        align-items: center;
+    }
+    
+    .typography{
+        order: 1
+    }
+    .ui{
+        order: 2
+    }
+    .logo{
+        width: 170px;
+        order: 3
+    }
+    .branding{
+        order: 4
+    }
+    
+    .graffiti{
+        order: 5;
+    }
+}
