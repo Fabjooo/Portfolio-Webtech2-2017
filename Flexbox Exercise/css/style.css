@@ -70,10 +70,14 @@ section li{
     flex-grow: 1; /*belangrijk bij nieuwe schermbreedte! */
 }
 
-@media screen and (min-width: 640px){
+@media screen and (min-width: 650px){
     
     header{
         display: flex;
+    }
+    
+    h1{
+        padding-right: 5px;
     }
     
     nav
@@ -101,3 +105,19 @@ section li{
     }
 }
 
+@media screen and (min-width: 850px)
+{ 
+    header
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    nav ul
+    {
+        width: 500px;
+        padding: 0;
+        margin-left: auto;
+    }
+
+}
