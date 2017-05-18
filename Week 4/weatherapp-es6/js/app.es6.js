@@ -100,7 +100,7 @@ class Weather
         }
 
         $("#beer").append(`<h2>Drink <span>${(this.beer)}</span> dit maakt je dag nog beter!</h2>`);
-        $("#beer").append(`<img src="${(this.beerImg)}"></img>`);
+        $("#beer").append(`<img src="${(this.beerImg)}" width="50%"></img>`);
 
 }
     
