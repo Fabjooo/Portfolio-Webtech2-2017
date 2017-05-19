@@ -3,8 +3,10 @@ class NotesApp {
         this.buttonAddNote = document.getElementById('btnAddNote');
         this.notesContainer = document.querySelector(".notes");
         this.noteInput = document.querySelector("#txtAddNote");
-
+        this.newNote = "";
         this.buttonAddNote.addEventListener("click", this.addNote.bind(this));
+
+        //getNotesFromCacheOrStorage();
     }
 
     addNote(event) {
@@ -21,11 +23,31 @@ class NotesApp {
         newNote.appendChild(notelink);
 
         this.notesContainer.appendChild(newNote);
+        //this.saveNotes();
         this.resetNotesForm();
         
         //event.preventDefault();
         console.log("clicked to add note " + event);
     }
+
+    /*getNotesFromCacheOrStorage(){
+        if (localStorage.getItem('Note') != null){
+            this.LoadNotes();
+        }else {
+            console.log("ready to add a note");
+        }
+    }
+
+    saveNotes(){
+        console.log(this.noteInput.value);
+        localStorage.setItem('Note', this.noteInput.value);
+        console.log("storing Note in cache");
+    }
+
+    LoadNotes(){
+        this.notes = localStorage.getItem('Note');
+        console.log(this.noteInput);
+    }*/
 
     removeNote(e){
          console.log("removing note");
